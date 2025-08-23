@@ -18,10 +18,9 @@ body{
   background-repeat: no-repeat;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   padding: 10px;
   gap: 10px;
   height: 32rem;
@@ -30,8 +29,27 @@ body{
   margin-top: 6rem;
   border: 2px solid #4B9B6E;
   background-color: #141414ab;
+  
   border-radius: 15px;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+  height: 32rem;
+  width: 70rem;
+  margin: auto;
+  margin-top: 6rem;
+
+  border: 2px solid #4B9B6E;
+  border-radius: 15px;
+  background-color: rgba(20, 20, 20, 0.7); 
+  backdrop-filter: blur(10px);            
+  -webkit-backdrop-filter: blur(10px);    
 }
+
 
 h2{
   color: #4B9B6E;
