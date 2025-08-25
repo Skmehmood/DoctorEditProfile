@@ -39,11 +39,10 @@ function DoctorEditProfile() {
   
   
   return (
-          // <h2>Edit Profile</h2>
-          // <h3>Live Preview</h3>
     <div className={style.container}>
       <div className={style.form_container}>
         <form>
+        <h2>Edit Profile</h2>
           <div className={style.name}>
             <input
               type="text"
