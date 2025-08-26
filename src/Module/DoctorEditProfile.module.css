@@ -20,22 +20,6 @@ body{
   background-repeat: no-repeat;
 }
 
-/* Fade-in animation for the whole container */
-/* .container {
-  display: flex;
-  gap: 10px;
-  height: 34rem;
-  width: 60rem;
-  margin: auto;
-  margin-top: 5rem;
-  border-radius: 15px;
-  background-color: rgba(20, 20, 20, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  animation: fadeIn 1s ease-in-out; 👈 fade in effect
-} */
-
 .container {
   display: flex;
   /* justify-content: space-around; */
@@ -52,21 +36,6 @@ body{
   backdrop-filter: blur(10px);            
   -webkit-backdrop-filter: blur(10px);    
 }
-
-/* .container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  height: 32rem;
-  width: 60rem;
-  margin: 1rem auto 0;              
-  border: 2px solid #4B9B6E;
-  border-radius: 15px;
-  background-color: rgba(20, 20, 20, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 10px;
-} */
 
 h2{
   text-align: right;
@@ -128,22 +97,23 @@ form label {
   font-weight: bold;
 }
 
+
+/* Keyframes */
+
+input:focus, select:focus {
+  outline: none;
+  border: 2px solid #1B5E3A;
+  box-shadow: 0 0 10px #1B5E3A, 0 0 20px #1B5E3A;
+  transition: 0.3s ease-in-out;
+}
+
+
 .name{
   display: flex;
   gap: 35px;
   margin-top: 20px;
   /* justify-content: space-around; */
 }
-
-/* .name input{
-  width: 180px;
-  height: 15px;
-  padding: 7px;
-  margin-top: 13px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #1B5E3A;
-} */
 
 .naam{
   width: 180px;
@@ -244,78 +214,6 @@ form button:hover {
   background-color: #2E7D5C;
 }
 
-.preview_card {
-  display: flex;
-  flex-direction: column;
-  background-color: #2f2f2f;
-  padding: 20px;
-  margin-top: 37px;
-  gap: 5px;
-  border-radius: 6px;
-  /* border: 1px solid #4B9B6E; */
-}
-
-/* Profile image bounce-in */
-.preview_image {
-  width: 200px;
-  height: 200px;
-  border-radius: 99.9px;
-  border: 3px solid #1B5E3A;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-
-  animation: bounceIn 1s ease; /* 👈 bounce effect */
-}
-
-.preview_image {
-  width: 200px;
-  height: 200px;
-  /* object-fit: cover; */
-  /* margin-bottom: 15px; */
-  border-radius: 99.9px;
-  /* width: 150px; */
-  /* height: 150px; */
-  /* border-radius: 50%; */
-  border: 3px solid #1B5E3A;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.preview_card strong {
-  font-size: 16px;
-  /* margin: 10px 0; */
-  /* color: #2E7D5C; */
-}
-
-
-/* Card pop-in animation */
-/* .preview_card {
-  display: flex;
-  flex-direction: column;
-  background-color: #2f2f2f;
-  padding: 20px;
-  margin-top: 37px;
-  gap: 5px;
-  border-radius: 6px;
-  transform: scale(0.95);
-  opacity: 0;
-  animation: popIn 0.8s ease forwards; 👈 pop animation
-  animation-delay: 0.5s;
-} */
-
-
-/* Keyframes */
-
-
-input:focus, select:focus {
-  outline: none;
-  border: 2px solid #1B5E3A;
-  box-shadow: 0 0 10px #1B5E3A, 0 0 20px #1B5E3A;
-  transition: 0.3s ease-in-out;
-}
-
 button {
   position: relative;
   overflow: hidden;
@@ -344,7 +242,29 @@ button::before {
   }
 }
 
+
+.preview_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2f2f2f;
+  padding: 20px;
+  margin-top: 37px;
+  gap: 5px;
+  border-radius: 6px;
+  /* border: 1px solid #4B9B6E; */
+}
+
+/* Profile image bounce-in */
 .preview_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 99.9px;
+  border: 3px solid #1B5E3A;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+
+  animation: bounceIn 1s ease; /* 👈 bounce effect */
   animation: rotateIn 0.8s ease;
 }
 
@@ -358,3 +278,14 @@ button::before {
     opacity: 1;
   }
 }
+
+.preview_card strong {
+  font-size: 16px;
+  /* margin: 10px 0; */
+  /* color: #2E7D5C; */
+}
+
+
+
+
+
